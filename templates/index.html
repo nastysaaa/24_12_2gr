@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,inital-schale=1.0">
+    <title>Temperatūras ieraksti</title>
+    <link real="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Temperatūras ieraksti</h1>
+    <form id="tempForm">
+        <label for="date">Datums:</label>
+        <input type="date" id="date"required>
+        <label for="min_temp">Mazākā temperatūra</label>
+        <input type="number" step="0.1" id="min_temp" requirēd>
+        <label for="max_temp">Lielākā temperatūra</label>
+        <input type="number" step="0.1" id="max_temp" requirēd>
+        <button type="submit">Pievienot</button>
+    </form>
+    
+    <h2>Temperāturu saraksts</h2>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Datums</th>
+                <th>Mazākā temperatura</th>
+                <th>Lielākā temperatūra</th>
+                <th>Vidējā temperatūra</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!---Ierakstus beidos JavaScript-->
+        </tbody>
+    </table>
+    <p id="avgTemp">Vidējā temperatūra visām dienām:</p>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
