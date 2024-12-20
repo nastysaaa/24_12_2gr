@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteoprojekts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Mājaslapas galvene -->
+    <header>
+        <h1>Meteoprojekts</h1>
+    </header>
+
+    <!-- Datu ievades forma -->
+    <section>
+        <h2>Datu ievades forma</h2>
+        <form id="weatherForm">
+            <label for="city">Pilsēta:</label>
+            <input type="text" id="city" placeholder="Ievadiet pilsētu">
+            
+            <label for="temperature">Temperatūra (°C):</label>
+            <input type="number" id="temperature" placeholder="Ievadiet temperatūru">
+
+            <button type="button" id="addData">Pievienot</button>
+        </form>
+    </section>
+
+    <!-- Tabula ar rezultātiem -->
+    <section>
+        <h2>Temperatūras dati</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pilsēta</th>
+                    <th>Temperatūra (°C)</th>
+                </tr>
+            </thead>
+            <tbody id="dataTable"></tbody>
+        </table>
+    </section>
+
+    <!-- Vidējās temperatūras aprēķins -->
+    <section>
+        <h2>Vidējā temperatūra</h2>
+        <p id="averageTemp">Vidējā temperatūra: -</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

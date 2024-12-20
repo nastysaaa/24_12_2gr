@@ -1,0 +1,87 @@
+/* Izmantotā krāsu palete: https://www.color-hex.com/color-palette/110618 */
+body {
+    background-color: #2f3e46; /* Tumšākā krāsa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    width: 70%;
+    background-color: #cad2c5; /* Gaišākā krāsa */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-weight: bold;
+    color: #52796f; /* Zaļgana krāsa no paletes */
+    text-align: center;
+}
+
+.temperature-text {
+    font-style: italic;
+    color: #354f52; /* Tumšāka zaļa */
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    color: #52796f; /* Zaļā krāsa */
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    border: 2px solid #354f52; /* Tumšāka zaļa */
+    background-color: #ffffff;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+}
+
+button {
+    background-color: #84a98c; /* Poga zaļa */
+    color: #ffffff;
+    border: 2px solid #52796f;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+
+button:hover {
+    background-color: #354f52; /* Tumšāka zaļa uz hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    font-weight: bold;
+    background-color: #52796f; /* Tumši zaļa */
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    color: #52796f; /* Tā pati zaļā krāsa kā virsrakstiem */
+    padding: 10px;
+    border-bottom: 1px solid #cad2c5;
+}
